@@ -1,0 +1,122 @@
+{
+  "projects": [
+    {
+      "title": "Planama",
+      "description": "efw",
+      "image": "./images/planama.png",
+      "inDevelopment": true,
+      "address": "",
+      "toolsUsed": [
+        "AngularJS",
+        "Firebase",
+        "HTML5",
+        "CSS3",
+        "Yeoman",
+        "Bower",
+        "Grunt",
+        "npm",
+        "Twitter Bootstrap"
+      ]
+    },
+    {
+      "title": "Gogo Bus",
+      "description": "efw",
+      "image": "./images/gogobus.png",
+      "inDevelopment": true,
+      "address": "",
+      "toolsUsed": [
+        "AngularJS",
+        "ExpressJS",
+        "Mongoose",
+        "MongoDB",
+        "GTFS Data",
+        "Node",
+        "HTML5",
+        "CSS3",
+        "Yeoman",
+        "Bower",
+        "Grunt",
+        "npm",
+        "Twitter Bootstrap"
+      ]
+    },
+    {
+      "title": "Turbo International",
+      "description": "efw",
+      "image": "./images/yeoman.png",
+      "inDevelopment": true,
+      "address": "",
+      "toolsUsed": [
+        "AngularJS",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "MySQL",
+        "Magento",
+        "Yeoman",
+        "Bower",
+        "Grunt",
+        "npm",
+        "Twitter Bootstrap"
+      ]
+    },
+    {
+      "title": "Japanese American Nurseries",
+      "description": "Worked within the client's design to build a mobile-first, responsive WordPress theme on top of a custom WordPress as a CMS installation including custom content types, plugins, and widgets.",
+      "image": "./images/janurseries.png",
+      "client": "Anthropological Studies Center",
+      "inDevelopment": false,
+      "address": "http://janurseries.com",
+      "toolsUsed": [
+        "PHP",
+        "JS",
+        "HTML5",
+        "CSS3",
+        "MySQL",
+        "WordPress",
+        "Bower",
+        "Twitter Bootstrap"
+      ]
+    },
+    {
+      "title": "Jeff Wesson WordPress",
+      "description": "wdaw",
+      "image": "./images/jeffwesson.png",
+      "inDevelopment": false,
+      "address": "http://jeffwesson.com",
+      "toolsUsed": [
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "Yeoman",
+        "Bower",
+        "Grunt",
+        "npm",
+        "Twitter Bootstrap"
+      ]
+    },
+    {
+      "title": "Gypsy Cafe",
+      "description": "efewef",
+      "image": "./images/gypsycafe.png",
+      "inDevelopment": false,
+      "address": "http://gypsy-cafe.com",
+      "toolsUsed": [
+        "AngularJS",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "title": "W Designs",
+      "description": "efewef",
+      "image": "./images/wdesigns.png",
+      "inDevelopment": false,
+      "address": "http://wdesigns.co",
+      "toolsUsed": [
+        "HTML5",
+        "CSS3"
+      ]
+    }
+  ]
+}
