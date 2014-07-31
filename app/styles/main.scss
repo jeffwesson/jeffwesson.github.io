@@ -3,6 +3,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
+/* Medium font icons */
+@font-face {
+  font-family: 'MediumIcons';
+  src: url('../fonts/medium-icons.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* Variables */
 $jw-orange: #ff9b33;
 $jw-blue: #00bfff;
@@ -70,22 +76,37 @@ body {
   animation-delay: -1.0s;
 }
 
-@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
 
 @-webkit-keyframes bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
+  0%, 100% {
+    -webkit-transform: scale(0.0)
+  }
+  50% {
+    -webkit-transform: scale(1.0)
+  }
 }
 
 @keyframes bounce {
   0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% {
-      transform: scale(1.0);
-      -webkit-transform: scale(1.0);
-    }
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
 }
 
 /* Custom page header */
@@ -149,9 +170,9 @@ nav {
 .portfolio {
   .project-item {
     margin: 2em auto 3em;
-    border-bottom: 1px solid #eee;
     img {
       margin: 1em auto 2em !important;
+      box-shadow: 8px 8px 24px 3px #666;
       &:last-child {
         margin-bottom: 1em;
       }
@@ -160,7 +181,6 @@ nav {
       border: 1px solid $jw-blue;
       padding: 4px;
       margin-top: 10px;
-      margin-right: 10px;
       color: $jw-blue;
     }
   }
@@ -196,8 +216,21 @@ footer {
   color: #777;
   ul {
     li {
+      font-family: 'MediumIcons', 'Helvetica', 'Arial', 'sans-serif';
+      .icon--logoM {
+        font-style: normal;
+        font-size: 2em;
+        line-height: 0.8em;
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: bottom;
+        &:before {
+          content: '\e03e';
+        }
+      }
       span {
         display: block;
+        font-family: monospace;
       }
     }
   }
