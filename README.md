@@ -1,5 +1,5 @@
-# AngularJS personal website
-
+jeffwesson.github.io
+====================
 Built to house:
  - an online portfolio,
  - contact information,
