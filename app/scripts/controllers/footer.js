@@ -8,6 +8,7 @@
  * Controller of the jeffwessonApp
  */
 angular.module('jeffwessonApp')
-  .controller('FooterCtrl', function ($scope) {
-    $scope.year = new Date().getFullYear();
-  });
+  .controller('FooterCtrl', ['$scope',
+    function ($scope) {
+      $scope.year = new Date().getFullYear();
+    }]);

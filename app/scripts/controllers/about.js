@@ -8,10 +8,11 @@
  * Controller of the jeffwessonApp
  */
 angular.module('jeffwessonApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('AboutCtrl', ['$scope',
+    function ($scope) {
+      $scope.awesomeThings = [
+        'HTML5 Boilerplate',
+        'AngularJS',
+        'Karma'
+      ];
+    }]);
