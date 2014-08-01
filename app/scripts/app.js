@@ -29,9 +29,9 @@ angular
         controller: 'PortfolioCtrl',
         controllerAs: 'portfolio',
         resolve: {
-          get: function (dataModel) {
+          get: ['dataModel', function (dataModel) {
             return dataModel.getData();
-          }
+          }]
         }
       })
       .otherwise({

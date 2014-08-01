@@ -8,7 +8,7 @@
  * Factory in the jeffwessonApp.
  */
 angular.module('jeffwessonApp')
-  .factory('dataModel', [ '$http',
+  .factory('dataModel', ['$http',
     function ($http) {
       var dataModel = {};
       dataModel.getData = function () {
