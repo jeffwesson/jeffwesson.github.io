@@ -5,7 +5,7 @@
       "description": "Working with a small team of 2-3 developers on a sprint planning solution for agile and scrum development teams. Planama uses bleeding edge technologies including realtime database syncing, through Firebase, to achieve a much more lightweight and easy-to-iterate product.",
       "image": "./images/planama.cb7c99e4.png",
       "inDevelopment": true,
-      "address": "",
+      "address": "https://planama.firebaseapp.com/#/",
       "toolsUsed": [
         "AngularJS",
         "Firebase",
