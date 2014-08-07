@@ -12,7 +12,7 @@ angular.module('jeffwessonApp')
     function ($http) {
       var dataModel = {};
       dataModel.getData = function () {
-        $http.get('./scripts/models/data-model.c44h60m0.json')
+        $http.get('./scripts/models/data-model.json')
           .success(function (response) {
             dataModel.content = response ? response : [];
           });
