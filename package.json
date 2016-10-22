@@ -1,0 +1,22 @@
+{
+    "name": "jeffwesson.github.io",
+    "version": "2.0.0",
+    "description": "A simple site to house an online portfolio, contact information, and possibly somewhere to write.",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jeffwesson/jeffwesson.github.io.git"
+    },
+    "keywords": [
+        "node"
+    ],
+    "author": "Jeff Wesson <jeff@jeffwesson.com>",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/jeffwesson/jeffwesson.github.io/issues"
+    },
+    "homepage": "https://github.com/jeffwesson/jeffwesson.github.io#readme",
+    "dependencies": {},
+    "devDependencies": {}
+}
