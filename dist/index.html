@@ -1,20 +1,19 @@
-<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.7e033639.css"> <link rel="stylesheet" href="styles/main.c7ccf769.css">  <body ng-app="jeffwessonApp"> <!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
-<![endif]--> <div class="container"> <header class="row text-center"> <hgroup> <h1>Jeff Wesson</h1> <h2>Web Developer</h2> </hgroup> <nav ng-controller="NavCtrl"> <ul class="nav nav-justified"> <li ng-class="{active: isActive('/')}"> <a ng-href="#">About</a> </li> <li ng-class="{active: isActive('/portfolio')}"> <a ng-href="#/portfolio">Portfolio</a> </li> </ul> </nav> </header> <div ng-show="loadingData"> <div class="spinner"> <div class="dot1"></div> <div class="dot2"></div> </div> </div> <div ng-view="" class="view-animate"></div> <footer ng-controller="FooterCtrl"> <ul class="list-unstyled list-inline text-center"> <li> <a href="https://github.com/jeffwesson/" target="_blank"> <i class="fa fa-2x fa-github"></i><span>GitHub</span> </a> </li> <li> <a href="https://twitter.com/jeffwesson" target="_blank"> <i class="fa fa-2x fa-twitter"></i><span>Twitter</span> </a> </li> <li> <a href="https://medium.com/@jeffwesson" target="_blank"> <i class="icon icon--logoM"></i><span>Medium</span> </a> </li> <li> <a href="https://google.com/+jeffwesson82" target="_blank"> <i class="fa fa-2x fa-google-plus"></i><span>Google+</span> </a> </li> <li> <a href="https://linkedin.com/in/jswesson" target="_blank"> <i class="fa fa-2x fa-linkedin"></i><span>LinkedIn</span> </a> </li> <li> <a href="mailto:jeff@jeffwesson.com" target="_blank"> <i class="fa fa-2x fa-envelope"></i><span>Email</span> </a> </li> </ul> <p class="text-center">&copy; {{year}} Jeff Wesson</p> </footer> </div> <!-- /.container--> <script>(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+<html lang="en">
 
-  ga('create', 'UA-53376990-1');
-  ga('send', 'pageview');</script> <!--[if lt IE 9]>
-<script src="bower_components/es5-shim/es5-shim.js"></script>
-<script src="bower_components/json3/lib/json3.min.js"></script>
-<![endif]--> <script src="scripts/vendor.a7e8e530.js"></script> <script src="scripts/scripts.d5017807.js"></script>  
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jeff Wesson</title>
+</head>
+
+<body>
+	<!--[if lt IE 10]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+	your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div id="root"></div>
+	<script src="bundle.js"></script>
+</body>
+
+</html>
