@@ -1,6 +1,19 @@
 export const portfolio = {
 	"projects": [
 		{
+			"title": "InMobi",
+			"description": "Worked as a JavaScript engineer on InMobi Studio – a rich media ad platform which enables users to author MRAID (Mobile Rich Media Ad Interface Definitions) compliant HTML5 creatives that run on various platforms and mobile ad networks. Worked with 2-4 other front end engineers to build and maintain core JS ad code, UI apps including analytics dashboards, and the actual creative Studio using Flash.",
+			"image": "/images/inmobi-studio.jpg",
+			"inDevelopment": false,
+			"address": "https://inmobi.com",
+			"toolsUsed": [
+				"Google Closure",
+				"Backbone",
+				"Angular(1.x)",
+				"Polymer"
+			]
+		},
+		{
 			"title": "Audi USA",
 			"description": "Worked with a team to develop and maintain a web experience and platform with which both Audi customers as well as Audi Brand Specialists could interact.",
 			"image": "/images/audiusa-devices.jpg",
@@ -77,6 +90,7 @@ export const portfolio = {
 		{
 			"title": "Turbo International",
 			"description": "Working under a non-disclosure agreement to retool and otherwise improve an online e-commerce solution.",
+			"image": "/images/turbo-international.png",
 			"inDevelopment": false,
 			"address": "",
 			"toolsUsed": [

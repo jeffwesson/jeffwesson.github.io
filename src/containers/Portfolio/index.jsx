@@ -12,29 +12,17 @@ const Portfolio = () => {
 				{
 					projects.map((project, i) => (
 						<li key={i} className="portfolio-item">
-							{
+							{/* {
 								project.inDevelopment ? <div className="pull-right in-development"><span></span> Currently in development</div> : ''
-							}
+							} */}
 							<dl>
 								<dt>{project.title}</dt>
 								<dd>{project.description}</dd>
 								<dt>Tools Used</dt>
 								<dd className="tools-used">
-									<ul className="list-inline">
-										{
-											project.toolsUsed.map((toolUsed, i, a) => {
-												if (i === a.length - 1) {
-													return (
-														<li key={i}>and {toolUsed}.</li>
-													)
-												}
-
-												return (
-													<li key={i}>{toolUsed},</li>
-												)
-											})
-										}
-									</ul>
+									{
+										project.toolsUsed.join(', ')
+									}
 								</dd>
 							</dl>
 							<span>
