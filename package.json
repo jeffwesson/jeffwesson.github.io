@@ -2,7 +2,7 @@
 	"name": "jeffwesson.github.io",
 	"version": "0.1.0",
 	"private": true,
-	"homepage" : "http://jeffwesson.github.io/dist",
+	"homepage": "http://jeffwesson.github.io",
 	"dependencies": {
 		"@fortawesome/fontawesome": "^1.1.4",
 		"@fortawesome/fontawesome-free-brands": "^5.0.8",
@@ -11,6 +11,7 @@
 		"@fortawesome/react-fontawesome": "^0.0.17",
 		"axios": "^0.18.0",
 		"classnames": "^2.2.5",
+		"gh-pages": "^1.1.0",
 		"history": "^4.7.2",
 		"react": "^16.2.0",
 		"react-bootstrap": "^0.32.1",
@@ -28,6 +29,8 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"test": "react-scripts test --env=jsdom",
 		"eject": "react-scripts eject"
 	}
