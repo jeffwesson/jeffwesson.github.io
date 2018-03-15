@@ -5,15 +5,11 @@ import { ConnectedRouter } from 'react-router-redux';
 import store, { history } from './store';
 import App from './containers/App';
 
-import './index.css';
-
-const target = document.querySelector('#root');
-
 render(
 	<Provider store={store}>
 		<ConnectedRouter history={history}>
 			<App />
 		</ConnectedRouter>
 	</Provider>,
-	target
+	document.querySelector('#root')
 );

@@ -1,64 +1,41 @@
-import React,  { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Header from '../Header';
 import About from '../About';
 import Portfolio from '../Portfolio';
+import Footer from '../Footer';
 
-class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
+import { Grid, Row, Col } from 'react-bootstrap';
+import './index.css';
 
-	render() {
-		return (
-			<div>
-				<header>
-					<hgroup>
-						<h1>Jeff Wesson</h1>
-						<h2>Web Developer</h2>
-					</hgroup>
-					<nav>
-						<Link to="/">About</Link>
-						<Link to="/portfolio">Portfolio</Link>
-					</nav>
-				</header>
-				<main>
-					<Route exact path="/" component={About} />
-					<Route exact path="/portfolio" component={Portfolio} />
-				</main>
-				<footer>
-					<ul>
-						<li>
-							<a href="https://github.com/jeffwesson/" target="_blank" rel="noopener noreferrer">
-								<span>GitHub</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/jeffwesson" target="_blank" rel="noopener noreferrer">
-								<span>Twitter</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://medium.com/@jeffwesson" target="_blank" rel="noopener noreferrer">
-								<span>Medium</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://linkedin.com/in/jswesson" target="_blank" rel="noopener noreferrer">
-								<span>LinkedIn</span>
-							</a>
-						</li>
-						<li>
-							<a href="mailto:jeff@jeffwesson.com" target="_blank" rel="noopener noreferrer">
-								<span>Email</span>
-							</a>
-						</li>
-					</ul>
-					<p>&copy; {new Date().getFullYear()} Jeff Wesson</p>
-				</footer>
-			</div>
-		);
+const App = () => {
+	const el = document.querySelector('#loading');
+	if (el) {
+		el.style.display = 'none';
 	}
-}
+	return (
+		<Grid>
+			<Row>
+				<Col xs={12}>
+					<Header />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12}>
+					<Switch>
+						<Route exact path="/" component={About} />
+						<Route exact path="/portfolio" component={Portfolio} />
+						<Route component={About} />
+					</Switch>
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={12}>
+					<Footer />
+				</Col>
+			</Row>
+		</Grid>
+	);
+};
 
 export default App;
