@@ -1,0 +1,43 @@
+hgroup {
+	border-bottom: 2px solid black;
+	margin-bottom: 5px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+.nav .nav-link,
+.nav .nav-link:link,
+.nav .nav-link:visited,
+.nav .nav-link:hover,
+.nav .nav-link:active {
+	font-size: 1.5em;
+	font-weight: 300;
+	background-color: #ffb66b;
+	color: white;
+}
+
+.nav .nav-link.active
+.nav .nav-link.active:link,
+.nav .nav-link.active:visited,
+.nav .nav-link.active:hover,
+.nav .nav-link.active:active {
+	background-color: #fa7f00;
+}
+
+@media screen and (min-width: 768px) {
+	h1, h2 {
+		font-size: 2.5em;
+	}
+}
