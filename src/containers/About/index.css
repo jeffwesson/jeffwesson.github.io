@@ -1,3 +1,7 @@
+.About p {
+	text-align: justify;
+}
+
 @media (max-width: 767px) {
 	h3 span {
 		display: block;
