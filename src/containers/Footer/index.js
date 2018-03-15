@@ -6,22 +6,22 @@ const Footer = () => (
 	<footer>
 		<ul className="list-unstyled list-inline text-center">
 			<li>
-				<A href="https://github.com/jeffwesson/">
+				<A href="https://github.com/jeffwesson/" blank>
 					<span>GitHub</span>
 				</A>
 			</li>
 			<li>
-				<A href="https://twitter.com/jeffwesson">
+				<A href="https://twitter.com/jeffwesson" blank>
 					<span>Twitter</span>
 				</A>
 			</li>
 			<li>
-				<A href="https://medium.com/@jeffwesson">
+				<A href="https://medium.com/@jeffwesson" blank>
 					<span>Medium</span>
 				</A>
 			</li>
 			<li>
-				<A href="https://linkedin.com/in/jswesson">
+				<A href="https://linkedin.com/in/jswesson" blank>
 					<span>LinkedIn</span>
 				</A>
 			</li>
