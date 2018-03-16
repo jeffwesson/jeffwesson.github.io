@@ -5,6 +5,7 @@ import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
 import faMediumM from '@fortawesome/fontawesome-free-brands/faMediumM'
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
 import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope'
+import faKey from '@fortawesome/fontawesome-free-solid/faKey'
 import A from '../../components/A';
 import './index.css';
 
@@ -34,6 +35,11 @@ const Footer = () => (
 			<li>
 				<A href="mailto:jeff@jeffwesson.com" title="Email">
 					<FontAwesomeIcon icon={faEnvelope} size="3x" />
+				</A>
+			</li>
+			<li>
+				<A href="https://keybase.io/jeffwesson" blank title="Keybase">
+					<FontAwesomeIcon icon={faKey} size="3x" />
 				</A>
 			</li>
 		</ul>
