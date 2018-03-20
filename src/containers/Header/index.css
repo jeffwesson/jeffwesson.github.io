@@ -24,7 +24,7 @@ h3 {
 .nav .nav-link:active {
 	font-size: 1.5em;
 	font-weight: 300;
-	background-color: #ffb66b;
+	background-color: #337ab7;
 	color: white;
 }
 
@@ -33,7 +33,7 @@ h3 {
 .nav .nav-link.active:visited,
 .nav .nav-link.active:hover,
 .nav .nav-link.active:active {
-	background-color: #fa7f00;
+	background-color: #24557F;
 }
 
 @media screen and (min-width: 768px) {
