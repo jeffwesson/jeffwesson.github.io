@@ -2,7 +2,7 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub'
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter'
-import faMediumM from '@fortawesome/fontawesome-free-brands/faMediumM'
+import faPencilAlt from '@fortawesome/fontawesome-free-solid/faPencilAlt'
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
 import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope'
 import faKey from '@fortawesome/fontawesome-free-solid/faKey'
@@ -23,8 +23,8 @@ const Footer = () => (
 				</A>
 			</li>
 			<li>
-				<A href="https://medium.com/@jeffwesson" blank title="Medium">
-					<FontAwesomeIcon icon={faMediumM} size="3x" />
+				<A href="https://jeffwesson.github.io/blog/" blank title="Blog">
+					<FontAwesomeIcon icon={faPencilAlt} size="3x" />
 				</A>
 			</li>
 			<li>
