@@ -1,0 +1,17 @@
+.nav .nav-link,
+.nav .nav-link:link,
+.nav .nav-link:visited,
+.nav .nav-link:hover,
+.nav .nav-link:active {
+	font-size: 1.5em;
+	font-weight: 300;
+	background-color: #337ab7;
+	color: white;
+}
+
+.nav .nav-link.active .nav .nav-link.active:link,
+.nav .nav-link.active:visited,
+.nav .nav-link.active:hover,
+.nav .nav-link.active:active {
+	background-color: #24557f;
+}
