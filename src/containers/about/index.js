@@ -13,7 +13,7 @@ const About = () => (
 			I am also a cultural anthropologist capable of teasing out valuable information as to how users use the Web. Putting such information to use throughout the entire development process enables me to better understand what users expect and why.
 		</p>
 		<p>
-			You can find any blatherings on code or the occasional baseball tweet <A href="https://twitter.com/jeffwesson" blank>@jeffwesson</A> and I try to <A href="https://jeffwesson.github.io/blog/" blank>blog</A> when I can find the time.
+			You can find any blatherings on code or the occasional baseball tweet <A href="https://twitter.com/jeffwesson" blank>@jeffwesson</A> and I try to <A href="https://medium.com/@jeffwesson" blank>blog</A> when I can find the time.
 		</p>
 		<p>
 			I encourage you to look through my <Link to="/portfolio">portfolio</Link> of recent web projects and to please contact me if you're interested in working together. I look forward to hearing from you.
