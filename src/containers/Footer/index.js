@@ -23,7 +23,7 @@ const Footer = () => (
 				</A>
 			</li>
 			<li>
-				<A href="https://jeffwesson.github.io/blog/" blank title="Blog">
+				<A href="https://medium.com/@jeffwesson" blank title="Blog">
 					<FontAwesomeIcon icon={faPencilAlt} size="3x" />
 				</A>
 			</li>
