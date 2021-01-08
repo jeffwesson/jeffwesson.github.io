@@ -33,7 +33,7 @@ const Footer = () => (
 				</A>
 			</li>
 			<li>
-				<A href="mailto:jeff@jeffwesson.com" title="Email">
+				<A href="mailto:jeffwesson@hey.com" title="Email">
 					<FontAwesomeIcon icon={faEnvelope} size="3x" />
 				</A>
 			</li>
