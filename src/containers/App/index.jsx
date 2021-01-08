@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from '../Header';
-import About from '../About';
-import Portfolio from '../Portfolio';
-import Footer from '../Footer';
+import Header from '../Header/index';
+import About from '../About/index';
+import Portfolio from '../Portfolio/index';
+import Footer from '../Footer/index';
 
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './index.css';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
 		el.style.display = 'none';
 	}
 	return (
-		<Grid>
+		<Container>
 			<Row>
 				<Col xs={12}>
 					<Header />
@@ -23,8 +23,8 @@ const App = () => {
 			<Row>
 				<Col xs={12}>
 					<Switch>
-						<Route exact path="/" component={About} />
-						<Route exact path="/portfolio" component={Portfolio} />
+						<Route exact={true} path="/" component={About} />
+						<Route exact={true} path="/portfolio" component={Portfolio} />
 						<Route component={About} />
 					</Switch>
 				</Col>
@@ -34,7 +34,7 @@ const App = () => {
 					<Footer />
 				</Col>
 			</Row>
-		</Grid>
+		</Container>
 	);
 };
 

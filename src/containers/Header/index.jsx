@@ -14,18 +14,20 @@ const Header = () => (
 				<li>
 					<NavLink
 						to="/"
+						className="nav-link"
 						isActive={(match, location) => !/\/portfolio/i.test(location.pathname)}
-						className="nav-link">
+					>
 						About
 					</NavLink>
 				</li>
 				<li>
 					<NavLink
-						exact
-						strict
 						to="/portfolio"
+						className="nav-link"
+						exact={true}
+						strict
 						isActive={(match, location) => /\/portfolio/i.test(location.pathname)}
-						className="nav-link">
+					>
 						Portfolio
 					</NavLink>
 				</li>
