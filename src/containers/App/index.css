@@ -3,9 +3,14 @@
 	padding-bottom: 15px;
 	color: #444;
 	max-width: 730px;
-	
+
 	/* Not currently used */
 	--jw-orange: #ff9b33;
 	--jw-blue: #00bfff;
 	--link-blue: #428bca;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }
