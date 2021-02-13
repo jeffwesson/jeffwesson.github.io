@@ -7,7 +7,7 @@ const Header = () => (
 	<header className="text-center">
 		<hgroup>
 			<h1>Jeff Wesson</h1>
-			<h2>Software Engineer</h2>
+			<h2>Senior Software Engineer</h2>
 		</hgroup>
 		<nav>
 			<ul className="nav nav-justified">
