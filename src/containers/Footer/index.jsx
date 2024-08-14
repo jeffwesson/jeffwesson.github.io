@@ -26,7 +26,7 @@ const Footer = () => (
 				</A>
 			</li>
 			<li>
-				<A href="mailto:jeffwesson@hey.com" title="Email">
+				<A href="mailto:jeffwesson@me.com" title="Email">
 					<i className="fas fa-envelope fa-3x"></i>
 				</A>
 			</li>
