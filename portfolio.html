@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="Personal website for Jeff Wesson" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<title>Jeff Wesson - Portfolio</title>
+		<script src="https://kit.fontawesome.com/092467a940.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1>Jeff Wesson</h1>
+				<h2>Senior Software Engineer</h2>
+			</hgroup>
+			<nav>
+				<ul>
+					<li>
+						<a href="/">About</a>
+					</li>
+					<li class="active">
+						<a href="/portfolio.html">Portfolio</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<template id="work-experience-template">
+				<style>
+					[role='row'] {
+						margin: 1em 0;
+					}
+					dt {
+						font-size: 1.25em;
+						margin-top: 1em;
+						font-weight: 500;
+						&:first-of-type {
+							font-size: 1.75em;
+							font-weight: 700;
+						}
+					}
+
+					dd {
+						margin-left: 0;
+					}
+
+					slot[name='work-link'] {
+						margin: 0 auto;
+					}
+
+					slot[name='work-example'] {
+						margin: 0 auto;
+					}
+				</style>
+				<section role="row">
+					<dl>
+						<dt><slot name="company-name"></slot></dt>
+						<dd><slot name="description"></slot></dd>
+						<dt>Tools Used</dt>
+						<dd><slot name="tools-used"></slot></dd>
+					</dl>
+					<slot name="work-link"></slot>
+					<slot name="work-example"></slot>
+				</section>
+			</template>
+			<script>
+				customElements.define(
+					'work-experience',
+					class extends HTMLElement {
+						constructor() {
+							super();
+							const template = document.getElementById('work-experience-template').content;
+							const shadowRoot = this.attachShadow({ mode: 'open' });
+							shadowRoot.appendChild(template.cloneNode(true));
+						}
+					}
+				);
+			</script>
+
+			<work-experience>
+				<span slot="company-name">InMobi (2015-16)</span>
+				<span slot="description"
+					>Worked as a JavaScript engineer on InMobi Studio - a rich media ad platform which enables users to
+					author MRAID (Mobile Rich Media Ad Interface Definitions) compliant HTML5 creatives that run on
+					various platforms and mobile ad networks. Worked with 2-4 other front end engineers to build and
+					maintain core JS ad code, UI apps including analytics dashboards, and the actual creative Studio
+					using Flash.</span
+				>
+				<span slot="tools-used">Google Closure, Backbone, Angular(1.x), Polymer</span>
+				<a href="https://inmobi.com" slot="work-link" title="InMobi">https://inmobi.com</a>
+				<img src="/images/inmobi-studio.jpg" alt="Screenshot of InMobi Studio" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Audi USA (2015)</span>
+				<span slot="description"
+					>Worked with a team to develop and maintain a web experience and platform with which both Audi
+					customers as well as Audi Brand Specialists could interact.</span
+				>
+				<span slot="tools-used"
+					>Backbone, jQuery, Underscore, Adobe CQ5, HTML5, CSS3, Bower, Grunt, npm, vagrant, maven</span
+				>
+				<a href="https://audiusa.com" slot="work-link" title="Audi USA">https://audiusa.com</a>
+				<img src="/images/audiusa-devices.jpg" alt="Screenshot of Audi USA" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Levi's Vintage Clothing (2014)</span>
+				<span slot="description">Worked with a team to develop enhancements for Levi's Vintage Clothing.</span>
+				<span slot="tools-used">AngularJS, HTML5, CSS3, Bower, Gulp, Contentful</span>
+
+				<img src="/images/lvc-grid.png" alt="Screenshot of Levi's Vintage Clothing" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Planama (2013-14)</span>
+				<span slot="description"
+					>Working with a small team of 2-3 developers on a sprint planning solution for agile and scrum
+					development teams. Planama uses bleeding edge technologies including realtime database syncing,
+					through Firebase, to achieve a much more lightweight and easy-to-iterate product.</span
+				>
+				<span slot="tools-used">AngularJS Firebase, HTML5, CSS3, Yeoman, Bower, Grunt, npm, Bootstrap</span>
+				<a href="https://planama.firebaseapp.com" slot="work-link" title="Planama"
+					>https://planama.firebaseapp.com</a
+				>
+
+				<img src="/images/planama.png" alt="Screenshot of Planama" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Gogo Bus (2013)</span>
+				<span slot="description"
+					>An Angular app serving General Transit Feed Specification (GTFS) data stored on MongoDB interfacing
+					with Express running on Node. I'm making use of a nice Node module which pulls up-to-date GTFS data
+					for any given transit agency, parses the xml, and populates a database on Mongo. This project is
+					intended to result in an easy-to-customize transit app with which developers can learn and
+					play.</span
+				>
+				<span slot="tools-used"
+					>AngularJS, ExpressJS, Mongoose, MongoDB, GTFS Data, Node, HTML5, CSS3, Yeoman, Bower, Grunt, npm,
+					Bootstrap</span
+				>
+
+				<img src="/images/gogobus.png" alt="Screenshot of Gogo Bus" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Turbo International (2013-14)</span>
+				<span slot="description"
+					>Worked under a non-disclosure agreement to retool and otherwise improve an online e-commerce
+					solution.</span
+				>
+				<span slot="tools-used"
+					>AngularJS, PHP, HTML5, CSS3, MySQL, Magento, Yeoman, Bower, Grunt, npm, Bootstrap</span
+				>
+				<a href="https://www.turbointernational.com" slot="work-link" title="Turbo International"
+					>https://www.turbointernational.com</a
+				>
+				<img
+					src="/images/turbo-international.png"
+					alt="Screenshot of Turbo International"
+					slot="work-example"
+				/>
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Anthropological Studies Center (2014)</span>
+				<span slot="description"
+					>Worked within the client's design to build a mobile-first, responsive theme on top of a custom
+					WordPress-as-a-CMS installation including custom content types, plugins, and widgets. This project
+					is helping to build a community and spread valuable cultural and historical information.</span
+				>
+				<span slot="tools-used">PHP, JS, HTML5, CSS3, MySQL, WordPress, Bower, Bootstrap</span>
+				<a href="http://janurseries.com" slot="work-link" title="Japanese American Nurseries"
+					>http://janurseries.com</a
+				>
+				<img
+					src="/images/janurseries.png"
+					alt="Screenshot of Japanese American Nurseries"
+					slot="work-example"
+				/>
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Custom WordPress themes (2012)</span>
+				<span slot="description"
+					>I designed a fairly simple, mobile-first, responsive theme to accommodate a blog. I opted for super
+					simplicity and only incorporated bare necessities such as recent blog posts, search, and archives
+					based on categories and tags. I have since, however, relocated to Medium and Twitter for any writing
+					needs.</span
+				>
+				<span slot="tools-used">PHP, HTML5, CSS3, MySQL, Yeoman, Bower, Grunt, npm, Bootstrap</span>
+
+				<img src="/images/jeffwesson.png" alt="Screenshot of WordPress theme" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">Gypsy Cafe (2011-12)</span>
+				<span slot="description"
+					>Worked closely with a designer to achieve a pixel-perfect representation of their vision while
+					incorporating common UI thinking and best practices. Using WordPress-as-a-CMS, I built a menu system
+					for updating items that doesn't just produce a pdf, which can be severely lacking concerning
+					accessibility.</span
+				>
+				<span slot="tools-used">PHP, HTML5, CSS3, MySQL</span>
+
+				<img src="/images/gypsycafe.png" alt="Screenshot of Gypsy Cafe website" slot="work-example" />
+			</work-experience>
+
+			<work-experience>
+				<span slot="company-name">W Designs (2010-12)</span>
+				<span slot="description"
+					>Version 1.0 of a collaborative effort to build more appealing, informative, useful, and functional
+					websites for local businesses in Sonoma County, California. This project uses semantic HTML5 and
+					cleverly laid-out CSS3 to accomplish a clean and minimalistic approach to web development.</span
+				>
+				<span slot="tools-used">HTML5, CSS3</span>
+
+				<img src="/images/wdesigns.png" alt="Screenshot of W Designs" slot="work-example" />
+			</work-experience>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a href="https://github.com/jeffwesson/" title="Github">
+						<i class="fab fa-github fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://x.com/jeffwesson" title="X">
+						<i class="fab fa-x-twitter fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://jeffwesson.com" title="Blog">
+						<i class="fas fa-blog fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/in/jswesson" title="LinkedIn">
+						<i class="fab fa-linkedin fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:jeffwesson@me.com" title="Email">
+						<i class="fas fa-envelope fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://keybase.io/jeffwesson" title="Keybase">
+						<i class="fab fa-keybase fa-3x"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
