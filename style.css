@@ -55,7 +55,7 @@ header hgroup {
 	header hgroup {
 		grid-template-rows: 1fr;
 		grid-template-columns: repeat(2, 50%);
-		text-align: left;
+		align-items: justify;
 		padding-bottom: 5px;
 	}
 }
