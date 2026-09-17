@@ -1,15 +1,15 @@
 {
-	"name": "jeffwesson.github.io",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"format": "prettier --write --cache .",
-		"format:check": "prettier --check --cache ."
-	},
-	"eslintConfig": {
-		"extends": []
-	},
-	"devDependencies": {
-		"prettier": "3.9.7"
-	}
+  "name": "jeffwesson.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write --cache .",
+    "format:check": "prettier --check --cache ."
+  },
+  "eslintConfig": {
+    "extends": []
+  },
+  "devDependencies": {
+    "prettier": "3.9.7"
+  }
 }
