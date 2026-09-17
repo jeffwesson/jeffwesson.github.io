@@ -1,0 +1,7 @@
+# Vendored / minified third-party assets
+fa.all.min.js
+*.min.js
+*.min.css
+
+# Generated
+package-lock.json
