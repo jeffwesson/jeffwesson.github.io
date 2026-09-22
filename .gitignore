@@ -12,3 +12,5 @@ yarn-error.log*
 
 # Vendored from @awesome.me/webawesome — regenerate with `npm run sync:skills`
 .claude/skills
+
+.vscode/*
