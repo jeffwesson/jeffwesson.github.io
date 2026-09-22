@@ -1,0 +1,511 @@
+[
+	{
+		"name": "audiusa-devices.jpg",
+		"base": "audiusa-devices",
+		"width": 1920,
+		"height": 1080,
+		"hasAlpha": false,
+		"originalSize": 162431,
+		"fallback": {
+			"file": "images/opt/audiusa-devices-960.jpg",
+			"size": 44556,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/audiusa-devices-480.avif",
+					"size": 7042
+				},
+				{
+					"width": 960,
+					"file": "images/opt/audiusa-devices-960.avif",
+					"size": 19732
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/audiusa-devices-1920.avif",
+					"size": 59300
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/audiusa-devices-480.webp",
+					"size": 8652
+				},
+				{
+					"width": 960,
+					"file": "images/opt/audiusa-devices-960.webp",
+					"size": 26552
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/audiusa-devices-1920.webp",
+					"size": 84588
+				}
+			]
+		}
+	},
+	{
+		"name": "autofi-fi-menu.jpg",
+		"base": "autofi-fi-menu",
+		"width": 2048,
+		"height": 1071,
+		"hasAlpha": false,
+		"originalSize": 107573,
+		"fallback": {
+			"file": "images/opt/autofi-fi-menu-960.jpg",
+			"size": 30185,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/autofi-fi-menu-480.avif",
+					"size": 3237
+				},
+				{
+					"width": 960,
+					"file": "images/opt/autofi-fi-menu-960.avif",
+					"size": 7955
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/autofi-fi-menu-1920.avif",
+					"size": 18906
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/autofi-fi-menu-480.webp",
+					"size": 4150
+				},
+				{
+					"width": 960,
+					"file": "images/opt/autofi-fi-menu-960.webp",
+					"size": 11934
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/autofi-fi-menu-1920.webp",
+					"size": 30038
+				}
+			]
+		}
+	},
+	{
+		"name": "gogobus.png",
+		"base": "gogobus",
+		"width": 2326,
+		"height": 1306,
+		"hasAlpha": false,
+		"originalSize": 266895,
+		"fallback": {
+			"file": "images/opt/gogobus-960.jpg",
+			"size": 71955,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/gogobus-480.avif",
+					"size": 8276
+				},
+				{
+					"width": 960,
+					"file": "images/opt/gogobus-960.avif",
+					"size": 21187
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/gogobus-1920.avif",
+					"size": 46765
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/gogobus-480.webp",
+					"size": 11094
+				},
+				{
+					"width": 960,
+					"file": "images/opt/gogobus-960.webp",
+					"size": 30006
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/gogobus-1920.webp",
+					"size": 72156
+				}
+			]
+		}
+	},
+	{
+		"name": "gypsycafe.png",
+		"base": "gypsycafe",
+		"width": 1540,
+		"height": 1800,
+		"hasAlpha": false,
+		"originalSize": 1110241,
+		"fallback": {
+			"file": "images/opt/gypsycafe-960.jpg",
+			"size": 184567,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/gypsycafe-480.avif",
+					"size": 29789
+				},
+				{
+					"width": 960,
+					"file": "images/opt/gypsycafe-960.avif",
+					"size": 75708
+				},
+				{
+					"width": 1540,
+					"file": "images/opt/gypsycafe-1540.avif",
+					"size": 126764
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/gypsycafe-480.webp",
+					"size": 38140
+				},
+				{
+					"width": 960,
+					"file": "images/opt/gypsycafe-960.webp",
+					"size": 102976
+				},
+				{
+					"width": 1540,
+					"file": "images/opt/gypsycafe-1540.webp",
+					"size": 184060
+				}
+			]
+		}
+	},
+	{
+		"name": "inmobi-studio.jpg",
+		"base": "inmobi-studio",
+		"width": 800,
+		"height": 500,
+		"hasAlpha": false,
+		"originalSize": 44838,
+		"fallback": {
+			"file": "images/opt/inmobi-studio-800.jpg",
+			"size": 33504,
+			"width": 800
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/inmobi-studio-480.avif",
+					"size": 6468
+				},
+				{
+					"width": 800,
+					"file": "images/opt/inmobi-studio-800.avif",
+					"size": 14716
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/inmobi-studio-480.webp",
+					"size": 8354
+				},
+				{
+					"width": 800,
+					"file": "images/opt/inmobi-studio-800.webp",
+					"size": 18404
+				}
+			]
+		}
+	},
+	{
+		"name": "janurseries.png",
+		"base": "janurseries",
+		"width": 750,
+		"height": 923,
+		"hasAlpha": false,
+		"originalSize": 765746,
+		"fallback": {
+			"file": "images/opt/janurseries-750.jpg",
+			"size": 160221,
+			"width": 750
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/janurseries-480.avif",
+					"size": 42555
+				},
+				{
+					"width": 750,
+					"file": "images/opt/janurseries-750.avif",
+					"size": 90180
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/janurseries-480.webp",
+					"size": 53696
+				},
+				{
+					"width": 750,
+					"file": "images/opt/janurseries-750.webp",
+					"size": 112534
+				}
+			]
+		}
+	},
+	{
+		"name": "jeffwesson.png",
+		"base": "jeffwesson",
+		"width": 750,
+		"height": 785,
+		"hasAlpha": false,
+		"originalSize": 345417,
+		"fallback": {
+			"file": "images/opt/jeffwesson-750.jpg",
+			"size": 126900,
+			"width": 750
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/jeffwesson-480.avif",
+					"size": 28058
+				},
+				{
+					"width": 750,
+					"file": "images/opt/jeffwesson-750.avif",
+					"size": 63370
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/jeffwesson-480.webp",
+					"size": 37338
+				},
+				{
+					"width": 750,
+					"file": "images/opt/jeffwesson-750.webp",
+					"size": 82908
+				}
+			]
+		}
+	},
+	{
+		"name": "lvc-grid.png",
+		"base": "lvc-grid",
+		"width": 2880,
+		"height": 1800,
+		"hasAlpha": true,
+		"originalSize": 1799211,
+		"fallback": {
+			"file": "images/opt/lvc-grid-960.png",
+			"size": 79575,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/lvc-grid-480.avif",
+					"size": 8629
+				},
+				{
+					"width": 960,
+					"file": "images/opt/lvc-grid-960.avif",
+					"size": 21957
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/lvc-grid-1920.avif",
+					"size": 58299
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/lvc-grid-480.webp",
+					"size": 10882
+				},
+				{
+					"width": 960,
+					"file": "images/opt/lvc-grid-960.webp",
+					"size": 30568
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/lvc-grid-1920.webp",
+					"size": 86092
+				}
+			]
+		}
+	},
+	{
+		"name": "planama.png",
+		"base": "planama",
+		"width": 1512,
+		"height": 1070,
+		"hasAlpha": false,
+		"originalSize": 86887,
+		"fallback": {
+			"file": "images/opt/planama-960.jpg",
+			"size": 47902,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/planama-480.avif",
+					"size": 5573
+				},
+				{
+					"width": 960,
+					"file": "images/opt/planama-960.avif",
+					"size": 12802
+				},
+				{
+					"width": 1512,
+					"file": "images/opt/planama-1512.avif",
+					"size": 18832
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/planama-480.webp",
+					"size": 7420
+				},
+				{
+					"width": 960,
+					"file": "images/opt/planama-960.webp",
+					"size": 17990
+				},
+				{
+					"width": 1512,
+					"file": "images/opt/planama-1512.webp",
+					"size": 32686
+				}
+			]
+		}
+	},
+	{
+		"name": "turbo-international.png",
+		"base": "turbo-international",
+		"width": 2046,
+		"height": 1434,
+		"hasAlpha": true,
+		"originalSize": 494710,
+		"fallback": {
+			"file": "images/opt/turbo-international-960.png",
+			"size": 98444,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/turbo-international-480.avif",
+					"size": 15643
+				},
+				{
+					"width": 960,
+					"file": "images/opt/turbo-international-960.avif",
+					"size": 55345
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/turbo-international-1920.avif",
+					"size": 145053
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/turbo-international-480.webp",
+					"size": 20510
+				},
+				{
+					"width": 960,
+					"file": "images/opt/turbo-international-960.webp",
+					"size": 67798
+				},
+				{
+					"width": 1920,
+					"file": "images/opt/turbo-international-1920.webp",
+					"size": 174538
+				}
+			]
+		}
+	},
+	{
+		"name": "wdesigns.png",
+		"base": "wdesigns",
+		"width": 1560,
+		"height": 1800,
+		"hasAlpha": false,
+		"originalSize": 1892213,
+		"fallback": {
+			"file": "images/opt/wdesigns-960.jpg",
+			"size": 187264,
+			"width": 960
+		},
+		"sources": {
+			"avif": [
+				{
+					"width": 480,
+					"file": "images/opt/wdesigns-480.avif",
+					"size": 31197
+				},
+				{
+					"width": 960,
+					"file": "images/opt/wdesigns-960.avif",
+					"size": 77352
+				},
+				{
+					"width": 1560,
+					"file": "images/opt/wdesigns-1560.avif",
+					"size": 138479
+				}
+			],
+			"webp": [
+				{
+					"width": 480,
+					"file": "images/opt/wdesigns-480.webp",
+					"size": 38690
+				},
+				{
+					"width": 960,
+					"file": "images/opt/wdesigns-960.webp",
+					"size": 105912
+				},
+				{
+					"width": 1560,
+					"file": "images/opt/wdesigns-1560.webp",
+					"size": 188434
+				}
+			]
+		}
+	}
+]
