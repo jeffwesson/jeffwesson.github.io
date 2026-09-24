@@ -7,8 +7,9 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 		<meta charset="utf-8" />
-		<meta name="description" content="Personal website for Jeff Wesson" />
-		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="Software portfolio for Jeff Wesson" />
+		<meta name="theme-color" content="white" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="black" media="(prefers-color-scheme: dark)" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Jeff Wesson - Portfolio</title>
 		<!-- Required: default theme + autoloader -->
@@ -31,7 +32,7 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body>
 		<template id="portfolio-project-template">
@@ -39,7 +40,7 @@
 				hgroup {
 					display: flex;
 					flex-direction: row;
-					align-content: center;
+					align-content: flex-start;
 					justify-content: space-between;
 				}
 
@@ -81,10 +82,7 @@
 			</header>
 			<section slot="subheader">
 				<a href="/">About</a>
-				<a href="/portfolio.html">Portfolio</a>
-			</section>
-			<section slot="main-header">
-				<h2>Portfolio</h2>
+				<a href="/portfolio.html" aria-current="page">Portfolio</a>
 			</section>
 			<main>
 				<portfolio-project>
@@ -547,9 +545,20 @@
 		<script>
 			customElements.define(
 				'portfolio-project',
-				class extends HTMLElement {
+				class PortfolioProject extends HTMLElement {
+					#rendered = false;
+
 					constructor() {
 						super();
+					}
+
+					connectedCallback() {
+						if (this.#rendered) {
+							return;
+						}
+
+						this.#rendered = true;
+
 						const template = document.getElementById('portfolio-project-template').content;
 						const shadowRoot = this.attachShadow({ mode: 'open' });
 						shadowRoot.appendChild(template.cloneNode(true));

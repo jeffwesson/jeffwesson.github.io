@@ -25,6 +25,10 @@ wa-page {
 	justify-content: center;
 }
 
+[slot='subheader'] [aria-current='page'] {
+	text-decoration: underline;
+}
+
 header {
 	flex-direction: column;
 }
