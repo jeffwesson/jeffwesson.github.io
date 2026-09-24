@@ -6,6 +6,7 @@ fa.all.min.js
 # Generated
 package-lock.json
 images/opt/manifest.json
+vendor/
 
 # Vendored agent skills
 .claude/skills

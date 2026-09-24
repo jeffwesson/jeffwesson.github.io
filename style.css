@@ -1,5 +1,73 @@
+/* Self-hosted so text doesn't wait on two extra origins. Merriweather is only used for the
+   header, so it is subset to exactly those glyphs (Google Fonts `text=` parameter with
+   "Jeff Wesson" + "Staff Engineer") — re-download it if the header text changes. */
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/bebas-neue-latin.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: 400 600;
+	font-display: swap;
+	src: url('/fonts/merriweather-header.woff2') format('woff2');
+}
+
 :root {
 	--content-width: 960px;
+}
+
+/* <wa-page> lays itself out only once its definition loads from the CDN. Until then keep it
+   hidden and show the loader instead. The step-end animation reveals the page anyway after
+   a few seconds so a CDN failure degrades to unstyled content instead of a blank screen. */
+wa-page:not(:defined) {
+	animation: 4s step-end page-reveal;
+}
+
+@keyframes page-reveal {
+	from {
+		visibility: hidden;
+	}
+}
+
+.page-loader {
+	position: fixed;
+	inset: 0;
+	display: grid;
+	place-content: center;
+	animation: 4s step-end forwards loader-hide;
+}
+
+@keyframes loader-hide {
+	to {
+		visibility: hidden;
+	}
+}
+
+wa-page:defined ~ .page-loader {
+	display: none;
+}
+
+.page-loader svg {
+	width: 3rem;
+	height: 3rem;
+	animation: 0.8s linear infinite loader-spin;
+}
+
+@keyframes loader-spin {
+	to {
+		rotate: 360deg;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.page-loader svg {
+		animation-duration: 3s;
+	}
 }
 
 wa-page {
@@ -78,4 +146,11 @@ wa-divider {
 footer {
 	align-content: center;
 	justify-content: center;
+}
+
+footer svg {
+	height: 2em;
+	width: auto;
+	fill: currentColor;
+	vertical-align: middle;
 }
