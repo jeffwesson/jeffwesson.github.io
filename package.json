@@ -7,6 +7,7 @@
     "postinstall": "npm run sync:skills",
     "format": "prettier --write --cache .",
     "format:check": "prettier --check --cache .",
+    "build": "vite build",
     "build:images": "node scripts/build-images.mjs",
     "check:wa-version": "node scripts/check-wa-version.mjs",
     "sync:skills": "rm -rf .claude/skills/webawesome .claude/skills/webawesome-design && mkdir -p .claude/skills && cp -R node_modules/@awesome.me/webawesome/dist/skills/. .claude/skills/"
@@ -14,7 +15,7 @@
   "devDependencies": {
     "@awesome.me/webawesome": "3.13.0",
     "prettier": "3.9.7",
-    "sharp": "0.34.5",
+    "sharp": "0.35.4",
     "vite": "8.3.0"
   }
 }
