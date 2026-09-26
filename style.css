@@ -94,7 +94,7 @@ wa-page {
 }
 
 [slot='subheader'] [aria-current='page'] {
-	text-decoration: underline;
+	text-decoration-style: solid;
 }
 
 header {
