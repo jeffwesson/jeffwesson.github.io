@@ -21,6 +21,13 @@
 		<script type="module" src="/vendor/webawesome.js"></script>
 	</head>
 	<body>
+		<template id="external-link-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+				<path
+					d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"
+				/>
+			</svg>
+		</template>
 		<wa-page>
 			<header slot="header">
 				<hgroup>
@@ -34,38 +41,36 @@
 			</div>
 			<main>
 				<p>
-					I have been building websites for nearly three decades using a variety of development tools; from static
-					<abbr title="Hyper Text Markup Language">HTML</abbr> &amp;
-					<abbr title="Cascading Style Sheets">CSS</abbr> sites, to Content Management Systems using the
-					<abbr title="Linux Apache MySQL PHP">LAMP</abbr> stack, and Single Page Applications using the
-					<abbr title="Mongo Express Angular Node">MEAN</abbr> and
-					<abbr title="Mongo Express React Node">MERN</abbr> stacks.
+					I've been building for the Web for more than twenty years, starting with static
+					<abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> sites
+					and eventually moving through <abbr title="Linux Apache MySQL PHP">LAMP</abbr>-based content management
+					systems, <abbr title="Mongo Express Angular Node">MEAN</abbr> and
+					<abbr title="Mongo Express React Node">MERN</abbr> applications, and today's React ecosystem.
 				</p>
 				<p>
-					<strong>
-						I currently work within the React ecosystem creating rich Web Applications using Next.js, Tailwind, GraphQL,
-						and RabbitMQ.</strong
-					>
+					I currently work within the React ecosystem, creating rich web applications using TypeScript, Next.js,
+					Tailwind, <abbr title="Graph Query Language">GraphQL</abbr>, Node.js, and
+					<abbr title="Rabbit Message Queue">RabbitMQ</abbr>.
 				</p>
 				<p>
-					The Web has proven to be a very powerful tool. And now, with the the number of mobile devices running modern
-					browsers and an Internet of Things becoming more commonplace, the Web and related technologies look poised to
-					gain an even larger market share of data.
+					The Web remains an incredibly powerful platform for sharing information and ideas. Its low barrier to entry
+					and ability to reach people across an enormous range of connected devices make it particularly well suited to
+					the new ideas and tools emerging from <abbr title="Artificial Intelligence">AI</abbr>.
 				</p>
 				<p>
-					I hold a bachelors degree of anthropology which can help me tease out valuable information on how people use
-					the products and tools we create. Putting this information to use throughout the entire development process
-					enables me to better understand what users expect and why.
+					I hold a bachelor's degree in anthropology, which gives me a different perspective on how people interact with
+					the products and tools we create. I try to bring that perspective into the entire development process, from
+					understanding what users need to figuring out why they behave the way they do.
 				</p>
 				<p>
-					You can find periodic posts on my
-					<a href="https://blog.jeffwesson.com" target="_blank">blog</a> or follow me on the social media platforms
-					listed below.
+					I occasionally write about things I'm working on over on my
+					<external-link><a href="https://blog.jeffwesson.com" target="_blank">blog</a></external-link
+					>, and you can find me on the social platforms listed below.
 				</p>
 				<p>
-					I encourage you to look through my
-					<a href="/portfolio.html">portfolio</a> of recent projects and to contact me if you are interested in working
-					together. I look forward to hearing from you.
+					Take a look through my
+					<external-link><a href="/portfolio.html" target="_blank">portfolio</a></external-link>
+					and get in touch if you'd like to work together. I look forward to hearing from you.
 				</p>
 			</main>
 			<footer slot="footer">
@@ -112,5 +117,29 @@
 				<path d="M12 2a10 10 0 0 1 10 10" />
 			</svg>
 		</div>
+		<script>
+			customElements.define(
+				'external-link',
+				class ExternalLink extends HTMLElement {
+					#rendered = false;
+
+					connectedCallback() {
+						if (this.#rendered) {
+							return;
+						}
+
+						this.#rendered = true;
+
+						const anchor = this.querySelector('a');
+						if (!anchor) {
+							return;
+						}
+
+						const icon = document.getElementById('external-link-icon').content.querySelector('svg');
+						anchor.append(icon.cloneNode(true));
+					}
+				},
+			);
+		</script>
 	</body>
 </html>

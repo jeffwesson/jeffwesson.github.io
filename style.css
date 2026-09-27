@@ -154,3 +154,11 @@ footer svg {
 	fill: currentColor;
 	vertical-align: middle;
 }
+
+external-link svg {
+	height: 0.8em;
+	width: auto;
+	fill: currentColor;
+	margin-inline-start: 0.2em;
+	vertical-align: top;
+}
